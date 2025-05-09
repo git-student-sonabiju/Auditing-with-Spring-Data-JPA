@@ -1,0 +1,16 @@
+meta {
+  name: delete books
+  type: http
+  seq: 6
+}
+
+delete {
+  url: http://localhost:8080/api/books/1
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: admin
+  password: admin
+}

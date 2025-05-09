@@ -1,0 +1,26 @@
+meta {
+  name: update books
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:8080/api/books/1
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: user
+  password: user
+}
+
+body:json {
+  {
+    "title": "Clean",
+    "author": "Robert C. Martin",
+    "isbn": "9780132350884",
+    "price": 39.99
+  }
+  
+}
